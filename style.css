@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.mode {
+  margin-top: 100px;
+  padding-left: 59%;
+}
+
+.mode .form-switch .form-check-input {
+  background-color: white;
+}
+
+.light-calculator {
+  width: 300px;
+  margin: 100px auto;
+  margin-top: 10px;
+  background-color: rgb(226, 217, 217);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(254, 253, 253, 0.5);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* Change to 3 columns */
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.light-calculator button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #eee;
+  /* Light gray button background */
+  color: #333;
+  /* Dark text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.light-calculator button:hover {
+  background-color: #ddd;
+  /* Slightly darker gray on hover */
+}
+
+.light-calculator .display {
+  grid-column: span 4;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #eee;
+  /* Light gray display background */
+  color: #333;
+  /* Dark text color */
+  border: none;
+  border-radius: 5px;
+}
+
+.light-calculator .light {
+  grid-column: span 4;
+  /* Make the display span 3 columns */
+  text-align: right;
+  padding: 14px;
+  font-size: 35px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.light-calculator button:nth-child(16) {
+  grid-row: span 2;
+  background-color: orange;
+
+}
+
+.light-calculator button:nth-child(16):hover {
+  grid-row: span 2;
+  background-color: rgb(255, 196, 88);
+
+}
+
+.light-calculator button:nth-child(2) {
+  grid-column: span 2;
+  background-color: orange;
+}
+
+.light-calculator button:nth-child(2):hover {
+  grid-column: span 2;
+  background-color: rgb(255, 196, 88);
+
+}
+
+
+
+
+/* for dark theme css
+*/
+.dark-calculator {
+  width: 300px;
+  margin: 100px auto;
+  margin-top: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.dark-calculator button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dark-calculator button:hover {
+  background-color: #555;
+}
+
+.dark-calculator .display {
+  grid-column: span 4;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.dark-calculator button:nth-child(16) {
+  grid-row: span 2;
+  background-color: orange;
+
+}
+
+.dark-calculator button:nth-child(16):hover {
+  grid-row: span 2;
+  background-color: rgb(255, 196, 88);
+
+}
+
+.dark-calculator button:nth-child(2) {
+  grid-column: span 2;
+  background-color: orange;
+}
+
+.dark-calculator button:nth-child(2):hover {
+  grid-column: span 2;
+  background-color: rgb(255, 196, 88);
+
+}
